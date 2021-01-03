@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML basic tags">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Gabriel Valdez">
+    <style>
+        .darkParagraph {
+            background-color: black;
+            color: white;
+        }
+    </style>
+    <title>HTML Tags | Gabriel Valdez</title>
+</head>
+<body>
+    
+    <!-- Headings -->
+    <h1>Hello HTML</h1>
+    <h2>Hello HTML</h2>
+    <h3>Hello HTML</h3>
+    <h4>Hello HTML</h4>
+    <h5>Hello HTML</h5>
+    <h6>Hello HTML</h6>
+    <hr>
+
+    <!-- Paragraphs and text decorators -->
+    <div>
+        <p title="{insert a tooltip here}">Lorem ipsum dolor sit amet <strong>consectetur</strong>, adipisicing elit. Deserunt vero voluptas <em>commodi</em> voluptatem corporis libero, autem delectus, repudiandae magnam, quas obcaecati non explicabo neque officia voluptatibus quibusdam esse maiores perferendis.</p>
+        <p>Lorem, ipsum dolor sit amet <mark>consectetur</mark> adipisicing elit. Omnis <small>cupiditate dolore</small> deserunt explicabo at, ratione laborum repudiandae <span style="color:blue">numquam dignissimos</span> nobis qui consectetur <del>cumque ut</del>, adipisci nulla assumenda unde voluptas quis.</p>
+        <p class="darkParagraph">Lorem ipsum dolor sit amet <ins>consectetur</ins> adipisicing elit. Architecto <sub>laudantium</sub> excepturi natus provident in sequi, atque repellat neque illum a <sup>facere quam</sup> itaque, modi vero molestias obcaecati inventore qui. Ipsum?</p>
+    </div>
+    <hr>
+
+    <!-- Image, links and bookmarks -->
+    <a href="#cat_bookmark">
+        <img src="cat_butterfly.webp" alt="cat watching cat_butterfly" width="400px">
+    </a>
+    <br><br>
+    <a href="https://www.google.com">Ir a Google</a>
+    <hr>
+
+    <!-- Lists (usually used as nav-bars) -->
+    <ol type="1" start="10">
+        <li>Item 1
+            <ul>
+                <li>Subitem 1.1</li>
+                <li>Subitem 1.2</li>
+            </ul>
+        </li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ol>
+    <hr>
+
+    <!-- Table structure and spans -->
+    <table>
+        <caption>Age Table</caption>
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Gabriel</td>
+                <td>Valdez</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Oliver</td>
+                <td>Tiny</td>
+                <td>2</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Full Name</th>
+                <th>Cellphone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Gabriel</td>
+                <td>Valdez</td>
+                <td>+591-22222222</td>
+            </tr>
+            <tr>
+                <td>Oliver</td>
+                <td>Tiny</td>
+                <td>+591-55555555</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <th>Name:</th>
+            <td>Gabriel Valdez</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Contact:</th>
+            <td>+591-22222222</td>
+        </tr>
+        <tr>
+            <td>+591-55555555</td>
+        </tr>
+    </table>
+    <hr>
+
+    <!-- Form and input types -->
+    <form action="server.php">
+        <fieldset>
+            <legend>Pre-Invoice Information:</legend>
+            First Name: <input type="text" name="firstname" value="" placeholder="Type your first name">
+            <br>
+            Last Name: <input type="text" name="lastname" value="" placeholder="Type your last name">
+            <br><br>
+            <input type="radio" name="plans"> Basic Plan
+            <input type="radio" name="plans" checked> Medium Plan
+            <input type="radio" name="plans"> Premium Plan
+            <br><br>
+            <input type="checkbox" name="services" checked> Periodic Maintenance
+            <input type="checkbox" name="services"> Corporate Mail
+            <input type="checkbox" name="services"> External Webpage
+            <br><br>
+            <label for="serverSelect">Server Select</label>
+            <select id="serverSelect" name="servers">
+                <option value="EU">EU Server</option>
+                <option value="USA">USA Server</option>
+                <option value="LATAM">LATAM Server</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <hr>
+
+    <!-- Bookmarked message -->
+    <br><br><br><br><br><br><br><br>
+    <p id="cat_bookmark">You clicked the cat!</p>
+    <br><br><br><br><br><br><br><br>
+    <hr>
+
+
+
+
+
+</body>
+</html>
